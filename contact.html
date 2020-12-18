@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Diary</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+<body>
+    <div class="main">
+        <div id="trips">
+            <nav>
+                <div class="nav-left">
+                    <h4><span class="logo">T</span>ravel Diary</h4>
+                </div>
+                <div class="nav-right">
+                    <a href="index.html" class="nav-link"><i class="fas fa-suitcase" ></i><span class="icon">TRIPS</span></a>
+                    <a href="about.html" class="nav-link">ABOUT</a>
+                    <a href="contact.html" class="nav-link">CONTACT</a>
+                </div>
+            </nav>
+        </div> 
+        <div class="contact-content">
+            <h1 class="contact-content-heading">Wanna come on my next trip? Contact me.</h1>
+            <form name="frm" id="submit-form" action="" method="POST">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <div id="phone"></div>
+                <input type="tel" name="phone" placeholder="Contact Number" id="gnumber" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <button type="submit" onclick="return val()" >SUBMIT</button>
+            </form>
+        </div>
+        <footer class="footer">
+            Copyright &copy; 2020, <code>Jen George Koshy</code>
+        </footer>       
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
